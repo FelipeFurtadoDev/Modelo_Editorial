@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PERSONALIZE: título e descrição -->
+  <title>Margem · Nº 05 · Modelo editorial demonstrativo</title>
+  <meta name="description" content="Modelo demonstrativo de site com direção de arte editorial. Conteúdo entre colchetes é espaço reservado.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#EFE8DA">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <p class="demo">Projeto demonstrativo de portfólio · publicação e conteúdos fictícios</p>
+
+  <!-- CABEÇALHO EDITORIAL -->
+  <header class="topo">
+    <div class="container topo-in">
+      <a class="logo" href="#capa">Margem</a>
+      <p class="edicao">Nº 05 · [Estação/Ano]</p>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="indice-menu">Índice</button>
+      <nav id="indice-menu" class="menu" aria-label="Principal">
+        <ol>
+          <li><a href="#capa">Capa</a></li>
+          <li><a href="#materias">Matérias</a></li>
+          <li><a href="#artigo">Reportagem</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#expediente">Expediente</a></li>
+          <li><a href="#contracapa">Contato</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- CAPA -->
+    <section id="capa" class="capa">
+      <div class="container capa-grid">
+        <p class="capa-faixa"><span>Edição Nº 05</span><span>[Estação · Ano]</span><span>[Cidade/UF]</span></p>
+
+        <!-- PERSONALIZE: manchete. O trecho em .corte ganha o recorte de papel sobre a foto. -->
+        <h1 class="manchete" data-split>
+          O detalhe <br>
+          <span class="corte">é o assunto.</span>
+        </h1>
+
+        <figure class="capa-foto">
+          <!-- PERSONALIZE IMAGEM (1ª dobra, sem lazy): troque o <div class="ph"> por
+               <img src="img/capa.jpg" alt="Descrição" width="900" height="1200" fetchpriority="high"> -->
+          <div class="ph t2 rev" data-reveal style="--r:3/4" data-ph="Foto de capa · 900 × 1200 px" role="img" aria-label="Espaço reservado para a foto de capa"></div>
+          <figcaption>Capa: [descrição da foto] · Foto: [crédito]</figcaption>
+        </figure>
+
+        <p class="abertura">[Texto de abertura em duas frases: o que esta edição reúne e por que vale a leitura. Substitua pelo texto real do negócio.]</p>
+
+        <nav class="sumario" aria-label="Nesta edição">
+          <h2 class="rotulo">Nesta edição</h2>
+          <ol>
+            <li><a href="#materias"><span class="pg">04</span>[Chamada da matéria 1]</a></li>
+            <li><a href="#arquivo"><span class="pg">14</span>[Chamada da seção de arquivo]</a></li>
+            <li><a href="#artigo"><span class="pg">20</span>[Chamada da reportagem]</a></li>
+            <li><a href="#galeria"><span class="pg">28</span>[Chamada da galeria]</a></li>
+          </ol>
+        </nav>
+        <p class="lombada" aria-hidden="true">Margem · Nº 05 · [Estação · Ano]</p>
+      </div>
+    </section>
+
+    <!-- MATÉRIAS: grid irregular. Para adicionar, copie um <article>. -->
+    <section id="materias" class="materias">
+      <div class="container">
+        <header class="sec-cab" data-reveal>
+          <p class="rotulo">Nesta edição</p>
+          <h2>Matérias</h2>
+          <p class="pag">p. 04–13</p>
+        </header>
+
+        <div class="mat-grid">
+          <article class="mat m1" data-reveal>
+            <div class="ph t1 rev" style="--r:4/5" data-ph="Imagem · 4:5" role="img" aria-label="Espaço reservado para imagem da matéria 1"></div>
+            <p class="rotulo">[Categoria] · p. 04</p>
+            <h3><a href="#artigo">[Manchete da matéria principal em duas ou três linhas]</a></h3>
+            <p>[Linha fina: uma frase que apresenta o assunto.]</p>
+            <p class="extra">[Autor fictício] · [X] min de leitura</p>
+          </article>
+
+          <article class="mat m2" data-reveal>
+            <div class="ph t3 rev" style="--r:3/2" data-ph="Imagem · 3:2" role="img" aria-label="Espaço reservado para imagem da matéria 2"></div>
+            <p class="rotulo">[Categoria] · p. 08</p>
+            <h3><a href="#artigo">[Manchete da matéria 2]</a></h3>
+            <p class="extra">[Linha fina com informação complementar.]</p>
+          </article>
+
+          <article class="mat m3" data-reveal>
+            <span class="numeral" aria-hidden="true">02</span>
+            <p class="rotulo">[Categoria] · p. 10</p>
+            <h3><a href="#artigo">[Matéria só de texto, com numeral grande]</a></h3>
+            <p class="extra">[Resumo curto, visível ao passar o mouse ou focar.]</p>
+          </article>
+
+          <article class="mat m4" data-reveal>
+            <div class="ph t4 rev" style="--r:1/1" data-ph="Imagem · 1:1" role="img" aria-label="Espaço reservado para imagem da matéria 4"></div>
+            <p class="rotulo">[Categoria] · p. 12</p>
+            <h3><a href="#artigo">[Manchete da matéria 4]</a></h3>
+          </article>
+
+          <article class="mat m5" data-reveal>
+            <div class="ph t2 rev" style="--r:2/3" data-ph="Imagem · 2:3" role="img" aria-label="Espaço reservado para imagem da matéria 5"></div>
+            <p class="rotulo">[Categoria] · p. 13</p>
+            <h3><a href="#artigo">[Manchete da matéria 5]</a></h3>
+            <p class="extra">[Linha fina.]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARROSSEL: DO ARQUIVO (opcional: apague a <section> para remover) -->
+    <section id="arquivo" class="arquivo" aria-labelledby="t-arq">
+      <div class="container">
+        <header class="sec-cab" data-reveal>
+          <p class="rotulo">Edições anteriores</p>
+          <h2 id="t-arq">Do arquivo</h2>
+          <div class="ctrl">
+            <button type="button" data-ant aria-label="Itens anteriores">←</button>
+            <button type="button" data-prox aria-label="Próximos itens">→</button>
+          </div>
+        </header>
+      </div>
+      <ul class="trilho" tabindex="0" role="region" aria-label="Carrossel do arquivo. Use as setas do teclado ou os botões.">
+        <li><div class="ph t1" style="--r:4/5" data-ph="Nº 01" role="img" aria-label="Espaço reservado"></div><p class="rotulo">Nº 01</p><h3>[Título da edição]</h3></li>
+        <li><div class="ph t3" style="--r:4/5" data-ph="Nº 02" role="img" aria-label="Espaço reservado"></div><p class="rotulo">Nº 02</p><h3>[Título da edição]</h3></li>
+        <li><div class="ph t4" style="--r:4/5" data-ph="Nº 03" role="img" aria-label="Espaço reservado"></div><p class="rotulo">Nº 03</p><h3>[Título da edição]</h3></li>
+        <li><div class="ph t2" style="--r:4/5" data-ph="Nº 04" role="img" aria-label="Espaço reservado"></div><p class="rotulo">Nº 04</p><h3>[Título da edição]</h3></li>
+        <li><div class="ph t1" style="--r:4/5" data-ph="Nº 05" role="img" aria-label="Espaço reservado"></div><p class="rotulo">Nº 05</p><h3>[Título da edição]</h3></li>
+      </ul>
+    </section>
+
+    <!-- FAIXA EM MOVIMENTO (opcional) -->
+    <div class="faixa" aria-hidden="true">
+      <div class="faixa-trilho">
+        <span>[Palavra] — [Palavra] — [Palavra] — [Palavra] — </span>
+        <span>[Palavra] — [Palavra] — [Palavra] — [Palavra] — </span>
+      </div>
+    </div>
+
+    <!-- REPORTAGEM -->
+    <article id="artigo" class="artigo">
+      <div class="container">
+        <p class="rotulo" data-reveal>Reportagem · p. 20</p>
+        <h2 class="art-titulo" data-split>[Título da matéria especial em duas linhas]</h2>
+        <p class="art-sub">[Subtítulo: uma frase que amplia a manchete.]</p>
+        <p class="byline">Texto [Autor fictício] · Fotos [Fotógrafo fictício] · [Data]</p>
+
+        <div class="art-corpo">
+          <p class="intro">Este parágrafo de abertura é demonstrativo. Substitua-o por um texto real que apresente o assunto da reportagem e convide à leitura. A capitular e a coluna dupla já estão prontas.</p>
+          <p>Parágrafo demonstrativo. Em uma publicação real, aqui entra o desenvolvimento do tema, com ritmo de leitura confortável e parágrafos de tamanho variado.</p>
+          <p>Segundo parágrafo demonstrativo. As colunas se ajustam sozinhas ao comprimento do texto, então você pode escrever mais ou menos sem alterar o CSS.</p>
+
+          <blockquote class="pull">“[Frase de destaque da reportagem, ampliada no meio do texto.]”</blockquote>
+
+          <p>Terceiro parágrafo demonstrativo. Use-o para aprofundar o assunto ou introduzir a imagem que vem a seguir.</p>
+
+          <figure class="art-foto">
+            <!-- PERSONALIZE: <img src="img/reportagem.jpg" alt="..." width="1400" height="800" loading="lazy"> -->
+            <div class="ph t3 rev" data-reveal style="--r:16/8" data-ph="Foto ampla · 1400 × 700 px" role="img" aria-label="Espaço reservado para foto ampla da reportagem"></div>
+            <figcaption>[Legenda da fotografia] · Foto: [crédito]</figcaption>
+          </figure>
+
+          <p>Quarto parágrafo demonstrativo. Depois da imagem, o texto retoma em duas colunas, como em uma página de revista.</p>
+          <p>Quinto parágrafo demonstrativo, para fechar a matéria. Substitua todo o conteúdo por texto autoral e informações verdadeiras.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- GALERIA (masonry + lightbox) -->
+    <section id="galeria" class="galeria-sec">
+      <div class="container">
+        <header class="sec-cab" data-reveal>
+          <p class="rotulo">Ensaio visual · p. 28</p>
+          <h2>Galeria</h2>
+          <p class="pag">Clique para ampliar</p>
+        </header>
+
+        <div class="galeria">
+          <!-- Cada botão abre a imagem no lightbox. Para foto real, troque o <div class="ph"> por <img ... loading="lazy"> -->
+          <button class="g-item" type="button" data-legenda="[Legenda 1] · Foto: [crédito]" aria-label="Ampliar imagem: legenda 1"><div class="ph t1" style="--r:3/4" data-ph="01" role="img" aria-label="Espaço reservado"></div></button>
+          <button class="g-item" type="button" data-legenda="[Legenda 2] · Foto: [crédito]" aria-label="Ampliar imagem: legenda 2"><div class="ph t4" style="--r:1/1" data-ph="02" role="img" aria-label="Espaço reservado"></div></button>
+          <button class="g-item" type="button" data-legenda="[Legenda 3] · Foto: [crédito]" aria-label="Ampliar imagem: legenda 3"><div class="ph t2" style="--r:4/3" data-ph="03" role="img" aria-label="Espaço reservado"></div></button>
+          <button class="g-item" type="button" data-legenda="[Legenda 4] · Foto: [crédito]" aria-label="Ampliar imagem: legenda 4"><div class="ph t3" style="--r:2/3" data-ph="04" role="img" aria-label="Espaço reservado"></div></button>
+          <button class="g-item" type="button" data-legenda="[Legenda 5] · Foto: [crédito]" aria-label="Ampliar imagem: legenda 5"><div class="ph t1" style="--r:1/1" data-ph="05" role="img" aria-label="Espaço reservado"></div></button>
+          <button class="g-item" type="button" data-legenda="[Legenda 6] · Foto: [crédito]" aria-label="Ampliar imagem: legenda 6"><div class="ph t4" style="--r:3/4" data-ph="06" role="img" aria-label="Espaço reservado"></div></button>
+          <button class="g-item" type="button" data-legenda="[Legenda 7] · Foto: [crédito]" aria-label="Ampliar imagem: legenda 7"><div class="ph t2" style="--r:4/5" data-ph="07" role="img" aria-label="Espaço reservado"></div></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPEDIENTE (identidade da marca) -->
+    <section id="expediente" class="expediente">
+      <div class="container exp-grid">
+        <p class="rotulo">Expediente</p>
+        <p class="exp-texto" data-reveal>[Declaração de identidade da marca em poucas linhas: quem faz, para quem e com que olhar. Texto grande, como uma carta da editora.]</p>
+        <dl class="exp-lista">
+          <div><dt>Direção</dt><dd>[Nome fictício]</dd></div>
+          <div><dt>Edição</dt><dd>[Nome fictício]</dd></div>
+          <div><dt>Fotografia</dt><dd>[Nome fictício]</dd></div>
+          <div><dt>Atendimento</dt><dd>[Cidade, região ou modalidade]</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CONTRACAPA / CONTATO -->
+    <section id="contracapa" class="contracapa">
+      <span class="fantasma" aria-hidden="true">Nº 06</span>
+      <div class="container contra-in">
+        <p class="rotulo">Contracapa</p>
+        <h2 data-split>Até a próxima edição.</h2>
+        <p class="contra-texto">[Frase curta convidando ao contato: orçamento, agendamento ou informações.]</p>
+        <a class="btn" href="#contracapa" data-whatsapp>Chamar no WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <p id="aviso" class="aviso" role="status" aria-live="polite"></p>
+
+  <!-- LIGHTBOX (usa o elemento <dialog>) -->
+  <dialog id="lightbox" aria-label="Imagem ampliada">
+    <button class="lb-fechar" type="button" data-fechar>Fechar</button>
+    <figure><div id="lb-img"></div><figcaption id="lb-leg"></figcaption></figure>
+    <div class="lb-nav">
+      <button type="button" data-lb-ant aria-label="Imagem anterior">←</button>
+      <button type="button" data-lb-prox aria-label="Próxima imagem">→</button>
+    </div>
+  </dialog>
+
+  <!-- RODAPÉ: PERSONALIZE -->
+  <footer class="rodape">
+    <div class="container rodape-grid">
+      <p class="logo">Margem</p>
+      <ul>
+        <li>[Endereço]</li><li>[Telefone]</li><li>[E-mail]</li><li>[Horário de funcionamento]</li>
+      </ul>
+      <ul>
+        <li>[Rede social 1]</li><li>[Rede social 2]</li>
+      </ul>
+      <p class="mini">Projeto demonstrativo de portfólio, com publicação fictícia. Não coleta dados nem usa rastreadores.</p>
+    </div>
+  </footer>
+</body>
+</html>
